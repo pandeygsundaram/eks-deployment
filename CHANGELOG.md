@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.1](https://github.com/pandeygsundaram/eks-deployment/compare/v2.0.0...v2.0.1) (2025-06-22)
+
+
+### Bug Fixes
+
+* add permissions ([bebee79](https://github.com/pandeygsundaram/eks-deployment/commit/bebee799467a8f0e6412aee7051a89d61910a3bf))
+* add release automation via Release Please ([ff6f780](https://github.com/pandeygsundaram/eks-deployment/commit/ff6f7803bf3a754547f11233026af7816715f8b8))
+
 ## [v1.0.0] - 2025-06-22
 ### Added
 - `/health` endpoint to check application status.
