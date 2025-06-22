@@ -3,6 +3,8 @@ package com.javatechie.crud.example.controller;
 import com.javatechie.crud.example.entity.Product;
 import com.javatechie.crud.example.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -54,8 +56,19 @@ public class ProductController {
     }
 
     @GetMapping("/products/search")
-    public List<Product> searchProducts(@RequestParam String keyword) {
-        return service.searchProducts(keyword);
+    public ResponseEntity<?> searchProducts(@RequestParam String keyword) {
+        if (keyword == null || keyword.trim().isEmpty()) {
+            return ResponseEntity
+                    .badRequest()
+                    .body("Missing 'keyword' query parameter. Please provide a valid keyword.");
+        }
+        List<Product> results = service.searchProductsByName(keyword);
+        if (results.isEmpty()) {
+            return ResponseEntity
+                    .status(HttpStatus.NOT_FOUND)
+                    .body("No products found matching the keyword: " + keyword);
+        }
+        return ResponseEntity.ok(results);
     }
 
 }
