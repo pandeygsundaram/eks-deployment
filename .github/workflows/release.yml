@@ -1,0 +1,20 @@
+name: Release Please
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+    release-please:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: Checkout the code
+              uses: actions/checkout@v4
+            
+            - name: Run Release Please
+              uses: google-github-actions/release-please-action@v4
+              with:
+                release-type: java
+                package-name: spring-boot-crud-example
+
