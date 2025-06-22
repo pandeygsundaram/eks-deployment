@@ -47,4 +47,10 @@ public class ProductController {
     public String deleteProduct(@PathVariable int id) {
         return service.deleteProduct(id);
     }
+
+    @GetMapping("/health")
+    public String healthCheck() {
+        return "✅ I'm alive, thriving, and ready to serve products!";
+    }
+
 }
