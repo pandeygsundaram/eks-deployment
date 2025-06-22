@@ -53,4 +53,9 @@ public class ProductController {
         return "✅ I'm alive, thriving, and ready to serve products!";
     }
 
+    @GetMapping("/products/search")
+    public List<Product> searchProducts(@RequestParam String keyword) {
+        return service.searchProducts(keyword);
+    }
+
 }
