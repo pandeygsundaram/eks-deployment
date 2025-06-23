@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.0](https://github.com/pandeygsundaram/eks-deployment/compare/v2.0.1...v2.1.0) (2025-06-23)
+
+
+### Features
+
+* contanerised the application ([3fd2578](https://github.com/pandeygsundaram/eks-deployment/commit/3fd25781fc73bceaa9292be0f76e9fe2fe81bc06))
+
+
+### Bug Fixes
+
+* add files to track commits ([4835bf1](https://github.com/pandeygsundaram/eks-deployment/commit/4835bf121d826a0f8dc8ebd993804f2b813c4683))
+* more fixes ([be1c5aa](https://github.com/pandeygsundaram/eks-deployment/commit/be1c5aaf83618cc247d0da850e2110526091ad45))
+* optimisation in docker image ([405192d](https://github.com/pandeygsundaram/eks-deployment/commit/405192d47227ea04dad72cf4038d441e31b94dbe))
+* properties updated ([d91e1be](https://github.com/pandeygsundaram/eks-deployment/commit/d91e1be72dc759309b57c92fdfea30f007afccf0))
+
 ## [2.0.1](https://github.com/pandeygsundaram/eks-deployment/compare/v2.0.0...v2.0.1) (2025-06-22)
 
 
