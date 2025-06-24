@@ -1,0 +1,3 @@
+.terraform/*
+.terraform.lock.hcl
+jenkins-server-key.pem

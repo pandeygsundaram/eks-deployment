@@ -1,0 +1,2 @@
+curl -o aws-load-balancer-controller-policy.json \
+  https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/main/docs/install/iam_policy.json
