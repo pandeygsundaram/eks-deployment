@@ -56,3 +56,13 @@ It pulls manifests from the repo and applies them automagically to your cluster.
 Track deployments, rollbacks, and sync status with a sleek UI.
 
 ---
+
+## 🎥 Video Walkthrough (YouTube)
+
+Prefer watching over reading? No judgment — here's a quick walkthrough video explaining the entire setup, including Terraform, Jenkins, ArgoCD, and how it all ties together.
+
+[![Watch the Video](https://img.youtube.com/vi/eN2122hHR3U/0.jpg)](https://youtu.be/eN2122hHR3U)
+
+> 📺 [Click here to watch directly on YouTube](https://youtu.be/eN2122hHR3U)
+
+---
