@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: product-api
-          image: 687450791434.dkr.ecr.ap-south-1.amazonaws.com/java-service:36  
+          image: 687450791434.dkr.ecr.ap-south-1.amazonaws.com/java-service:37  
           ports:
             - containerPort: 8000
           env:
