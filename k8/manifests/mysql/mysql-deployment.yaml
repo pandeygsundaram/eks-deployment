@@ -19,7 +19,7 @@ metadata:
   name: mysql-pvc
   namespace: shared-db
 spec:
-  storageClassName: mysql-sc
+  storageClassName: gp2
   accessModes:
     - ReadWriteOnce
   resources:
