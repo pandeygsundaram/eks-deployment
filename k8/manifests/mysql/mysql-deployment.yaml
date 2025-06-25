@@ -4,12 +4,12 @@ metadata:
   name: shared-db
 
 ---
-apiVersion: storage.k8s.io/v1         # ✅ corrected group
+apiVersion: storage.k8s.io/v1         
 kind: StorageClass
 metadata:
-  name: mysql-sc                      # 👈 custom name is fine
+  name: mysql-sc                      
 provisioner: ebs.csi.aws.com
-volumeBindingMode: WaitForFirstConsumer  # ✅ spelling was wrong (sneaky camelCase trap)
+volumeBindingMode: WaitForFirstConsumer 
 
 ---
 
@@ -19,7 +19,7 @@ metadata:
   name: mysql-pvc
   namespace: shared-db
 spec:
-  storageClassName: gp2
+  storageClassName: mysql-sc
   accessModes:
     - ReadWriteOnce
   resources:
